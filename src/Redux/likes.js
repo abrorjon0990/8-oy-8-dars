@@ -8,11 +8,11 @@ const likesSlice = createSlice({
   reducers: {
     addToLikes: (state, action) => {
       state.push(action.payload);
-      localStorage.setItem("likes", JSON.stringify(state)); // Saqlash
+      localStorage.setItem("likes", JSON.stringify(state)); 
     },
     removeFromLikes: (state, action) => {
       const newState = state.filter(item => item.id !== action.payload);
-      localStorage.setItem("likes", JSON.stringify(newState)); // Yangilash
+      localStorage.setItem("likes", JSON.stringify(newState)); 
       return newState;
     }
   },

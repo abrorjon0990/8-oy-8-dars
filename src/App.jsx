@@ -175,7 +175,7 @@ export default function App() {
                     <div className="card-actions flex mt-4">
                       <button
                         onClick={(e) => {
-                          e.stopPropagation();
+                         
                           if (!likes.some((item) => item.id === product.id)) {
                             dispatch(addToLikes(product));
                             showToast("Mahsulot layk qilindi! ❤️");
@@ -188,7 +188,7 @@ export default function App() {
 
                       <button
                         onClick={(e) => {
-                          e.stopPropagation();
+                         
                           if (!cart.some((item) => item.id === product.id)) {
                             dispatch(addToCart(product));
                             showToast("Mahsulot savatchaga qo'shildi! 🛒");
